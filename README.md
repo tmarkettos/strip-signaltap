@@ -13,8 +13,8 @@ Clean the current directory:
 
     strip-signaltap.sh
 
-Clean a git tree:
+Clean all commits in a git repo:
 
     cd my-git-checkout
-    git filter-branch /full/path/to/strip-signaltap.sh
+    git filter-branch --tree-filter /full/path/to/strip-signaltap.sh
 

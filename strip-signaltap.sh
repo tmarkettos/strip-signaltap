@@ -47,4 +47,4 @@ echo $BIN
 echo $DIR
 
 find $DIR -name "*.stp" -print0 | \
-	xargs -r -null -L1 'awk -i inplace -f $BIN/strip-signaltap.awk'
+	xargs -r --null -L1 awk -i inplace -f $BIN/strip-signaltap.awk
